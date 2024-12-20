@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asymdhh Gallery</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #3F5141;
+      color: #EEF4EE;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #EEF4EE;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+	
+	.hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+	
+	    /* Hidden List */
+    .list {
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .list a {
+      text-decoration: none;
+      color: white;
+      background-color: #D5D4BE;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+	
+    .list a:hover {
+      background-color: #3F5141;
+    }
+
+	
+    /* Container Grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+	
+	img:hover {
+	transform: scaleX(-1);
+	}
+
+    .picture {
+      background-color: #D5D4BE;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .gallery {
+      width: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #EEF4EE;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="bar">
+    <div class="menu">
+      <a href="8_about us.html">ABOUT US</a>
+      <a href="8_about us.html">REFERENCES</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Hidden List -->
+  <div class="list" id="list">
+    <a href="1_homepage.html">HOME</a>
+    <a href="2_biodata.html">BIODATA</a>
+    <a href="3_education.html">EDUCATION</a>
+    <a href="5_family.html">FAMILY</a>
+    <a href="6_gallery.html">GALLERY</a>
+    <a href="7_hobby.html">HOBBY</a>
+  </div>
+
+  <!-- First Section -->
+  <div class="container">
+  	<div class="picture">
+      <img src="img/family 9.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Angah's Wedding</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 10.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Angah's Wedding</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 11.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Family Photo</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/random 1.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>RANDOM</h2>
+        <p>Camping</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/random 2.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>RANDOM</h2>
+        <p>SPM Era</p>
+		</div>
+    </div>
+    <div class="picture">
+      <img src="img/random 3.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>RANDOM</h2>
+        <p>Fruit</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 12.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>With Family Members</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 13.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Cousin's Photo</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 14.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Enjoy Eid Celebration</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/scenery 1.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>SCENERY</h2>
+        <p>Enjoy the Sunrise</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/scenery 2.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>SCENERY</h2>
+        <p>Pulau Redang</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/scenery 3.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>SCENERY</h2>
+        <p>Pulau Duyung</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 15.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>My Siblings</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/family 16.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Outfit Of The Day at Cameron Highlands</p>
+		</div>
+    </div>
+	<div class="picture">
+      <img src="img/friends 1.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FRIENDS</h2>
+        <p>My Roommates</p>
+		</div>
+    </div>
+    <div class="picture">
+      <img src="img/family 17.jpg" alt="Family" class="gallery">
+		<div class="text">
+        <h2>FAMILY</h2>
+        <p>Family Day</p>
+		</div>
+    </div>
+		<div class="picture">
+      <img src="img/random 4.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Joined the Program</p>
+      </div>
+    </div>
+		<div class="picture">
+      <img src="img/random 5.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Food Hunting</p>
+      </div>
+    </div>
+			<div class="picture">
+      <img src="img/random 6.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Enjoy the Environment</p>
+      </div>
+    </div>
+			<div class="picture">
+      <img src="img/random 7.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Food Hunting</p>
+      </div>
+    </div>
+			<div class="picture">
+      <img src="img/random 8.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Food Hunting</p>
+      </div>
+    </div>
+	<div class="picture">
+      <img src="img/friends 2.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>Internship Era</p>
+      </div>
+    </div>
+	<div class="picture">
+      <img src="img/friends 3.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>My Classmate</p>
+      </div>
+    </div>
+	<div class="picture">
+      <img src="img/family 18.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FAMILY</h2>
+        <p>Family Photo</p>
+      </div>
+    </div>
+	<div class="picture">
+      <img src="img/random 9.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Edited the Photo</p>
+      </div>
+    </div>
+			<div class="picture">
+      <img src="img/random 10.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>My First Interview at Museum</p>
+      </div>
+    </div>
+	<div class="picture">
+      <img src="img/random 11.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>RANDOM</h2>
+        <p>Food Hunting</p>
+      </div>
+    </div>
+		<div class="picture">
+      <img src="img/friends 4.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>End of Semester 2</p>
+      </div>
+    </div>
+		<div class="picture">
+      <img src="img/friends 5.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>Done For Prospective Officer Course</p>
+      </div>
+    </div>
+		<div class="picture">
+      <img src="img/friends 6.jpg" alt="Family" class="gallery">
+      <div class="text">
+        <h2>FRIENDS</h2>
+        <p>Day Trip at Terengganu</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Icons Section -->
+  <div class="social-icons">
+    <a href="https://www.wasap.my/01234567890/pm" target="_blank">
+      <img src="img/ws.jpg" alt="WhatsApp">
+    </a>
+    <a href="https://www.instagram.com/asymdhh/profilecard/?igsh=cWxmY3N6bTA3MDlw" target="_blank">
+      <img src="img/ig.jpg" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © Asymdhh
+  </footer>
+  
+    <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const list = document.getElementById('list');
+
+    hamburger.addEventListener('click', () => {
+      if (list.style.display === 'flex') {
+        list.style.display = 'none';
+      } else {
+        list.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>

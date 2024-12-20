@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asymdhh Hobby</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #3F5141;
+      color: #2A322B;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* Navigation Bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #EEF4EE;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+
+    /* Hidden List */
+    .list {
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      text-align: center;
+      background-color: #EEF4EE;
+    }
+
+    .list a {
+      text-decoration: none;
+      color: white;
+      background-color: #D5D4BE;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .list a:hover {
+      background-color: #3F5141;
+    }
+
+    /* First Section */
+    .header {
+      height: 100vh;
+      background-image: url('img/background website.png');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      font-size: 2.5rem;
+      color: black;
+      font-family: poppins;
+      font-weight: bold;
+      margin-bottom: 30px;
+      line-height: 2.0;
+    }
+
+    /* Centering the hobby items */
+    .hobby {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Responsive grid */
+      gap: 20px;
+      justify-items: center; /* Center items horizontally */
+      width: 60%;
+      max-width: 1000px;
+      margin: 0 auto 50px; /* Center the section on page */
+    }
+
+    .hobby-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .hobby-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .hobby-item span {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    .arrow {
+      font-size: 1.5rem;
+      transform: rotate(-45deg);
+    }
+
+    .hobby-section {
+      width: 80%;
+      max-width: 1000px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .hobby-section h2 {
+      margin-top: 0;
+    }
+
+    .hobby-section img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .hobby-section img:hover {
+      transform: scaleX(-1); /* Mirror effect on hover */
+    }
+
+    /* Social Icons */
+    .social-icons {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #EEF4EE;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .list {
+        display: none;
+      }
+
+      .menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="bar">
+    <div class="menu">
+      <a href="8_about us.html">ABOUT US</a>
+      <a href="9_references.html">REFERENCES</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Hidden List -->
+  <div class="list" id="list">
+    <a href="1_homepage.html">HOME</a>
+    <a href="2_biodata.html">BIODATA</a>
+    <a href="3_education.html">EDUCATION</a>
+    <a href="5_family.html">FAMILY</a>
+    <a href="6_gallery.html">GALLERY</a>
+    <a href="7_hobby.html">HOBBY</a>
+  </div>
+
+  <!-- First Section -->
+  <div class="header">
+    Welcome to My PASTIME <br>
+    "Life is better when you're immersed in your hobbies" <br>
+    <div class="hobby">
+      <a href="#Cooking" class="hobby-item">
+        <span>• Cooking</span>
+        <span class="arrow">➜</span>
+      </a>
+      <a href="#Volunteering" class="hobby-item">
+        <span>• Volunteering</span>
+        <span class="arrow">➜</span>
+      </a>
+      <a href="#VideoGaming" class="hobby-item">
+        <span>• Video Gaming</span>
+        <span class="arrow">➜</span>
+      </a>
+      <a href="#FoodHunting" class="hobby-item">
+        <span>• Food Hunting</span>
+        <span class="arrow">➜</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hobby Details -->
+  <div id="Cooking" class="hobby-section">
+    <h2>Cooking</h2>
+    <p>Cooking is a way for me to be creative and explore new flavors. </p>
+	<p>I enjoy trying new recipes and ingredients. </p>
+	<p>Sharing my food with others brings me happiness. </p>
+	<p>Cooking is a relaxing and rewarding activity. </p>
+	<p>It helps me connect with people over good meals.</p>
+    <img src="img/cooking.jpg" alt="Cooking">
+  </div>
+
+  <div id="Volunteering" class="hobby-section">
+    <h2>Volunteering</h2>
+    <p>Volunteering is important to me because it lets me help others.</p> 
+	<p>I assist with food banks, community events, and environmental projects.</p>
+	<p>Volunteering teaches me the value of empathy and teamwork. </p>
+	<p>It feels good to give back to the community.</p>
+    <img src="img/volunteering.jpg" alt="Volunteering">
+  </div>
+
+  <div id="VideoGaming" class="hobby-section">
+    <h2>Video Gaming</h2>
+    <p>Video gaming is more than fun,it’s a way to challenge myself.</p>
+	<p>I like playing many types of games, from competitive ones to story-driven adventures.</p>
+	<p>Gaming lets me learn new skills and connect with others.</p> 
+	<p>It’s a great way to relax and solve problems.</p>
+    <img src="img/videogame.jpg" alt="Video Gaming">
+  </div>
+
+  <div id="FoodHunting" class="hobby-section">
+    <h2>Food Hunting</h2>
+    <p>Food hunting is my way of finding new food experiences. 
+	<p>I explore local restaurants and markets to try different dishes. </p>
+	<p>I enjoy tasting unique flavors and learning about different cultures. </p>
+	<p>It’s more than eating it’s about discovering the people and stories behind the food.</p>
+    <img src="img/foodhunting.jpg" alt="Food Hunting">
+  </div>
+
+  <!-- Social Icons Section -->
+  <div class="social-icons">
+    <a href="https://www.wasap.my/01234567890/pm" target="_blank">
+      <img src="img/ws.jpg" alt="WhatsApp">
+    </a>
+    <a href="https://www.instagram.com/asymdhh/profilecard/?igsh=cWxmY3N6bTA3MDlw" target="_blank">
+      <img src="img/ig.jpg" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © Asymdhh
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const list = document.getElementById('list');
+
+    hamburger.addEventListener('click', () => {
+      if (list.style.display === 'flex') {
+        list.style.display = 'none';
+      } else {
+        list.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>

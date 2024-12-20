@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asymdhh Education</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #AABEA5;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #EEF4EE;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+	
+	.hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+	
+	    /* Hidden List */
+    .list {
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .list a {
+      text-decoration: none;
+      color: white;
+      background-color: #D5D4BE;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+	
+    .list a:hover {
+      background-color: #AABEA5;
+    }
+	
+	.container {
+	max-width: 800px;
+	margin: 20px 0 auto;
+	padding: 20px;
+	}
+	
+	.trip-card {
+	background-color: white;
+	margin: 20px auto;
+	border-radius: 8px;
+	max-width: 800px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	overflow: hidden;
+	}
+	
+	.trip-card img {
+	width: 20%;
+	height: auto;
+	}
+	
+	.trip-content {
+	padding: 20px;
+	}
+	
+	.trip-content h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #2A3A47;
+    }
+
+    .trip-content p {
+      margin: 10px 0 20px;
+      color: #555;
+    }
+
+    .trip-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .trip-meta span {
+      font-weight: bold;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #1E90FF;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+	
+	.social-icons {
+	margin-top: 20px;
+    }
+	.social-icons a {
+	margin: 0 10px;
+	text-decoration: none;
+	display: inline-block;
+	}
+
+	.social-icons img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%; /* Makes icons circular */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.social-icons img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	}
+
+       /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #EEF4EE;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="bar">
+    <div class="menu">
+      <a href="8_about us.html">ABOUT US</a>
+      <a href="8_about us.html">REFERENCES</a>
+	</div>
+	 <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  
+    <!-- Hidden List -->
+  <div class="list" id="list">
+  <a href="1_homepage.html">HOME</a>
+    <a href="2_biodata.html">BIODATA</a>
+    <a href="3_education.html">EDUCATION</a>
+    <a href="5_family.html">FAMILY</a>
+    <a href="6_gallery.html">GALLERY</a>
+    <a href="7_hobby.html">HOBBY</a>
+  </div>
+
+  <!-- First Section -->
+  <div class="trip-card">
+	<img src="img/logoSKTP.jpg" alt="SEKOLAH KEBANGSAAN TELUK PASU">
+	<div class="trip-content">
+		<h2>SEKOLAH KEBANGSAAN TELOK PASU</h2>
+		<div class="trip -meta">
+			<p>2011-2016</p>
+			<p>21200 Kuala Terengganu, Terengganu</p>
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6175017865653!2d103.08825107479599!3d5.322207194656274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7beb0dfebec81%3A0x8e26eafcd8bb4bea!2sSekolah%20Kebangsaan%20Telok%20Pasu!5e0!3m2!1sen!2smy!4v1734548240095!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+		</div>
+		<a href="https://sktelokpasuktrg.blogspot.com/" class="read-more">Read More</a>
+		</div>
+	</div>
+  
+
+  <!-- Second Section -->
+  <div class="trip-card">
+	<img src="img/khairiah.png" alt="SEKOLAH MENENGAH AGAMA KHAIRIAH">
+	<div class="trip-content">
+		<h2>SEKOLAH MENENGAH AGAMA KHAIRIAH</h2>
+		<div class="trip -meta">
+			<p>2017-2022</p>
+			<p>20300, Jalan Sultan Omar, Kuala Terengganu, Terengganu</p>
+			<p>"Fly Khairiah Fly, Fly high"</p>
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6577239241205!2d103.14192057479602!3d5.315976394662446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7be6fc5784db5%3A0x88dc3d6939216ba9!2sSekolah%20Menengah%20Agama%20Khairiah!5e0!3m2!1sen!2smy!4v1734548188239!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+		</div>
+		<a href="https://smatmas.blogspot.com/p/khai.html" class="read-more">Read More</a>
+		</div>
+	</div>
+	
+   <!-- Third Section -->
+	<div class="trip-card">
+	<img src="img/images.jpeg" alt="UNIVERSITY TEKNOLOGY MARA">
+	<div class="trip-content">
+		<h2>UNIVERSITY TEKNOLOGY MARA</h2>
+		<div class="trip -meta">
+			<p>2022-2025</p>
+			<p>UiTM Kelantan, Kampung Belukar, 18500 Bandar Machang, Kelantan</p>
+			<p>"UiTM Di Hatiku"</p>
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947729634967!2d102.27092387479937!3d5.75699759422543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1734547451071!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+		</div>
+		<a href="https://www.instagram.com/uitmcawangankelantan/?hl=en" class="read-more">Read More</a>
+		</div>
+	</div>
+  
+  <!-- Third Section-->
+  <div class="social-icons">
+	 <a href="https://www.wasap.my/01234567890/pm" target="_blank">
+            <img src="img/ws.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/asymdhh/profilecard/?igsh=cWxmY3N6bTA3MDlw" target="_blank">
+            <img src="img/ig.jpg" alt="Instagram">
+        </a>
+	</div>
+
+  <!-- Footer -->
+  <footer>
+    © Asymdhh
+  </footer>
+  
+    <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const list = document.getElementById('list');
+
+    hamburger.addEventListener('click', () => {
+      if (list.style.display === 'flex') {
+        list.style.display = 'none';
+      } else {
+        list.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>
+

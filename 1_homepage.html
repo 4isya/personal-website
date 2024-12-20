@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asymdhh</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #D5D4BE;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #EEF4EE;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* First Section */
+    .main-header {
+      margin-top: 50px;
+      font-size: 160px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: #6b7753;
+      color: white;
+      padding: 0 10px;
+      border-radius: 50px;
+    }
+
+    .marquee {
+      font-size: 35px; /* Smaller font size */
+      font-weight: bold;
+      color: #333;
+      margin: 20px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .tagline {
+      font-size: 16px;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    .divider {
+      margin: 20px auto;
+      width: 30px;
+      height: 30px;
+      border: 2px solid black;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .divider::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    /* Second Section - Full Page */
+    #center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh; /* Full screen height */
+      background-image: url('img/bg.jpg'); /* Add your image URL here */
+      background-size: 200vh; /* Ensure the image covers the entire area */
+      background-position: center; /* Center the background image */
+      overflow: auto; /* Allow scrolling if content overflows */
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+      border-radius: 10px; /* Optional: Adds rounded corners to the list */
+    }
+
+    .color-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 25px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .color-block:hover {
+      opacity: 0.8; /* Optional: Adds hover effect */
+    }
+	
+	.social-icons {
+	margin-top: 20px;
+    }
+	.social-icons a {
+	margin: 0 10px;
+	text-decoration: none;
+	display: inline-block;
+	}
+
+	.social-icons img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%; /* Makes icons circular */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.social-icons img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	}
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #EEF4EE;
+      font-size: 14px;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="bar">
+    <div class="menu">
+      <a href="8_about us.html">ABOUT US</a>
+       <a href="8_about us.html">REFERENCES</a>
+    </div>
+  </div>
+
+  <!-- First Section -->
+  <section id="top">
+    <header class="main-header">
+      <span class="highlight">asymdhh</span>
+      <marquee direction="left" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="10" class="marquee">
+        <span>Hi, Welcome to My Website!</span>
+      </marquee>
+      <span>website</span>
+      <p class="tagline">• INDIVIDUAL • ASSIGNMENT •</p>
+    </header>
+    <a href="#center">
+      <div class="divider"></div>
+    </a>
+  </section>
+
+  <!-- Second Section (Full Page) -->
+  <section id="center">
+    <div class="list">
+      <a href="2_biodata.html" class="color-block" style="background-color: #B4C89F;">BIODATA</a>
+      <a href="3_education.html" class="color-block" style="background-color: #AABEA5;">EDUCATION</a>
+      <a href="5_family.html" class="color-block" style="background-color: #7C9A78;">FAMILY</a>
+      <a href="6_gallery.html" class="color-block" style="background-color: #3F5141;">GALLERY</a>
+      <a href="7_hobby.html" class="color-block" style="background-color: #2A322B;">HOBBY</a>
+    </div>
+  </section>
+  
+  <!-- Third Section-->
+  <div class="social-icons">
+	 <a href="https://www.wasap.my/01234567890/pm" target="_blank">
+            <img src="img/ws.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/asymdhh/profilecard/?igsh=cWxmY3N6bTA3MDlw" target="_blank">
+            <img src="img/ig.jpg" alt="Instagram">
+        </a>
+	</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © Asymdhh
+  </footer>
+</body>
+</html>

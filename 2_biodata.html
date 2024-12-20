@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asymdhh Biodata</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #B4C89F;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #EEF4EE;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+
+    /* Hidden List */
+    .list {
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      text-align: center;
+      background-color: #EEF4EE;
+    }
+
+    .list a {
+      text-decoration: none;
+      color: white;
+      background-color: #D5D4BE;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .list a:hover {
+      background-color: #B4C89F;
+    }
+
+    /* Profile Section */
+    .aisya-section {
+      height: 70vh;
+      text-align: center;
+      background: url('img/bg2.jpg') no-repeat center center / cover;
+      padding: 100px 20px;
+      color: #333;
+    }
+
+    .profile-photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .aisya-section h1 {
+      font-size: 35px;
+    }
+
+    .aisya-section p {
+      font-size: 18px;
+    }
+
+    /* Details Section */
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #D5D4BE;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      text-align: center;
+      background-color: #D5D4BE;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      text-align: center;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .section ul li strong {
+      color: black;
+    }
+
+	/* Profile Section */
+    .aisya-content {
+      height: 10vh;
+      text-align: center;
+      padding: 50px 10px;
+      color: #333;
+    }
+
+    .aisya-content h1 {
+      background-color: #6b7753;
+      color: white;
+      padding: 0 10px;
+      border-radius: 50px;
+    }
+
+    .aisya-content p {
+      font-size: 18px;
+    }
+	
+    /* Card Container */
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .h1 {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Individual Card */
+    .card {
+      flex: 1 1 calc(30% - 40px);
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      max-width: 500px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: black;
+    }
+
+    .card-content span {
+      font-size: 12px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #EEF4EE;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="bar">
+    <div class="menu">
+      <a href="8_about us.html">ABOUT US</a>
+       <a href="8_about us.html">REFERENCES</a>
+	   <a href="#REAL-WORK EXPERIENCE">EXPERIENCE</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Hidden List -->
+  <div class="list" id="list">
+    <a href="1_homepage.html">HOME</a>
+    <a href="2_biodata.html">BIODATA</a>
+    <a href="3_education.html">EDUCATION</a>
+    <a href="5_family.html">FAMILY</a>
+    <a href="6_gallery.html">GALLERY</a>
+    <a href="7_hobby.html">HOBBY</a>
+  </div>
+
+  <!-- First Section -->
+  <header class="aisya-section">
+    <img src="img/isya.jpg" alt="Aisya Madihah" class="profile-photo">
+    <h1>Aisya Madihah</h1>
+    <p>Student of Diploma in Information Management</p>
+    <p>University Teknologi Mara, Branch Kelantan, Campus Machang</p>
+  </header>
+
+  <!-- Details Section -->
+  <div class="container">
+    <div class="section">
+      <h3>NAME</h3>
+      <ul>
+        <li><strong>Nur Aisya Madihah Salim</strong></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>ADDRESS</h3>
+      <ul>
+        <li><strong>Manir, Kuala Terengganu</strong></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>DATE OF BIRTH</h3>
+      <ul>
+        <li><strong>19 February 2024</strong></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>EMAIL</h3>
+      <ul>
+        <li><strong>aisyamadhh@gmail.com</strong></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>PHONE</h3>
+      <ul>
+        <li><strong>014-2957354</strong></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>RELIGION</h3>
+      <ul>
+        <li><strong>Islam</strong></li>
+      </ul>
+    </div>
+  </div>
+
+   <header class="aisya-content">
+   <div id="REAL-WORK EXPERIENCE" class="REAL-WORK EXPERIENCE">
+    <h1 class="REAL-WORK EXPERIENCE">REAL-WORK EXPERIENCE</h1>
+  </header>
+  
+  
+  <!-- Card Section -->
+  <div class="card-container">
+    <div class="card">
+      <img src="img/isya2.jpg" alt="Ketua Exco Perhubungan Korporat & Protokol">
+      <div class="card-content">
+        <span>Head of The Exco</span>
+        <h2>Corporate Relations & Protocol</h2>
+        <span>Siswa Siswi Pertahanan Awam (SISPA)</span>
+        <p><span>March 2024 / February 2025</span></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/LM.jpg" alt="Pengarah Program">
+      <div class="card-content">
+        <span>Program Director</span>
+        <h2>Latihan Medan Series 1 & 2</h2>
+        <p>Series 1:</p>
+        <span>13 - 15 June 2024</span>
+        <p>Series 2:</p>
+        <span>20 - 22 June 2024</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/intern.jpg" alt="Internship">
+      <div class="card-content">
+        <span>Internship</span>
+        <h2>Setiausaha Kerajaan Terengganu</h2>
+        <span>21 July - 12 September 2024</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.wasap.my/01234567890/pm" target="_blank">
+      <img src="img/ws.jpg" alt="WhatsApp">
+    </a>
+    <a href="https://www.instagram.com/asymdhh/profilecard/?igsh=cWxmY3N6bTA3MDlw" target="_blank">
+      <img src="img/ig.jpg" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © Asymdhh
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const list = document.getElementById('list');
+
+    hamburger.addEventListener('click', () => {
+      if (list.style.display === 'flex') {
+        list.style.display = 'none';
+      } else {
+        list.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>
